@@ -23,13 +23,14 @@ function thetahealing_terapeutas_map($atts)
     'orderby'         => 'post_title',
   );
 
-  $query = new WP_Query( $args );
+  $posts = new WP_Query( $args );
 
   $terapeutas = [];
   $ufs = [];
-  if ($query->have_posts() ) {
-    $posts = $query->posts;
-    foreach ($posts as $post) {
+  if ($posts->have_posts() ) {
+    while ($posts->have_posts()) {
+      $posts->the_post();
+      $post = $posts->post;
       $terapeutas[] = $post;
 
       /*
