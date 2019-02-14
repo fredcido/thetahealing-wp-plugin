@@ -2,7 +2,7 @@
 
 // If this file is called directly, abort.
 if (!defined('WPINC')) {
-	die;
+    die;
 }
 
 function thetahealing_terapeutas_map($atts)
@@ -23,13 +23,13 @@ function thetahealing_terapeutas_map($atts)
     'orderby'         => 'post_title',
   );
 
-  $posts = new WP_Query( $args );
+  $query = new WP_Query( $args );
 
   $terapeutas = [];
   $ufs = [];
-  if ($posts->have_posts() ) {
-    while ($posts->have_posts()) {
-      $post = $posts->the_post();
+  if ($query->have_posts() ) {
+    $posts = $query->posts;
+    foreach ($posts as $post) {
       $terapeutas[] = $post;
 
       /*
