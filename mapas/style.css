@@ -105,3 +105,7 @@
 #map .model-darkgreen .state.hover .icon_state {
   fill: #5a95ce; text-decoration: none; 
 }
+
+.terapeutas .terapeuta {
+  opacity: 0;
+}
