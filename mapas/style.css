@@ -120,3 +120,7 @@
 .mapa-column > div {
   flex: 1;
 }
+
+.mapa-column .terapeutas .terapeuta ul li {
+  list-style: none;
+}
