@@ -252,10 +252,10 @@
 						</strong>
 						<?php
 							$cidadesUf = [];
-							while(have_rows('cidadeuf', $terapeuta->ID)) {
-								$row = get_row();
-								$cidadesUf[] = sprintf('%s/%s', $row['cidade'], $row['uf']);
-							}
+							// while(have_rows('cidadeuf', $terapeuta->ID)) {
+							// 	$row = get_row();
+							// 	$cidadesUf[] = sprintf('%s/%s', $row['cidade'], $row['uf']);
+							// }
 
 							echo implode(', ', $cidadesUf);
 						?>
