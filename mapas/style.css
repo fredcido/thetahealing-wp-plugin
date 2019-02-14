@@ -109,3 +109,14 @@
 .terapeutas .terapeuta {
   display: none;
 }
+
+.mapa-column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.mapa-column > div {
+  flex: 1;
+}
