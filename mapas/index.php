@@ -201,8 +201,8 @@
 		</svg>
 	</div>
 	<div class="terapeutas">
-		<?php foreach ($terapeutas as $teperauta) : ?>
-			<div class="terapeuta terapeuta-<?php echo $teperauta->ID; ?>">
+		<?php foreach ($terapeutas as $terapeuta) : ?>
+			<div class="terapeuta terapeuta-<?php echo $terapeuta->ID; ?>">
 				<h3><?php echo $terapeuta->post_title; ?></h3>
 				<ul>
 					<?php
