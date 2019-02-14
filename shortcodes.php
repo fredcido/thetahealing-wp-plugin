@@ -8,12 +8,7 @@ if (!defined('WPINC')) {
 function thetahealing_terapeutas_map($atts)
 {
   wp_enqueue_style('terapeutas-mapa-css', plugins_url('mapas/style.css', __FILE__ ));
-  wp_register_script( 
-      'terapeutas-mapa-js', 
-      plugins_url('mapas/script.js', __FILE__ ), 
-      array('jquery')
-  );
-  wp_enqueue_script('terapeutas-mapa-js');
+  wp_enqueue_script('terapeutas-mapa-js', plugins_url('mapas/script.js', __FILE__ ), array('jquery'));
 
   $args = array (
     'post_type'       => array('terapeuta'),
