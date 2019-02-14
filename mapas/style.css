@@ -121,6 +121,10 @@
   flex: 1;
 }
 
+.mapa-column .terapeutas .terapeuta ul {
+  padding-left: 0;
+}
+
 .mapa-column .terapeutas .terapeuta ul li {
   list-style: none;
 }
