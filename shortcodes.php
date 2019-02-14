@@ -51,4 +51,4 @@ function thetahealing_terapeutas_map($atts)
   return ob_get_clean();
 }
 
-add_shortcode('terapeutas_mapa');
+add_shortcode('terapeutas_mapa', 'thetahealing_terapeutas_map');
