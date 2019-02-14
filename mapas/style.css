@@ -107,5 +107,5 @@
 }
 
 .terapeutas .terapeuta {
-  opacity: 0;
+  display: none;
 }
