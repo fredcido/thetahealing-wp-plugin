@@ -113,4 +113,9 @@
     flex-direction: column;
     align-items: stretch;
   }
+
+  .mapa-column .terapeutas {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
