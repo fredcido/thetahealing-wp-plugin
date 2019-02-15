@@ -7,6 +7,7 @@ function terapeutaSeleciona(state) {
   
   $('#map #state_' + state.toLowerCase()).addClass('selected');
 
+  $('#uf-select').val(state);
   terapeutas.forEach(function(item) {
     $('.terapeutas .terapeuta-' + item).removeClass('hide');
   });
