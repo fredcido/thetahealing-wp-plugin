@@ -54,16 +54,12 @@
   fill: #ccc;
 }
 
-#map .model-green .state .shape.active {
+#map .model-green .state.active .shape {
   fill: #366823;
 }
 
-#map .model-green .state .shape.selected {
+#map .model-green .state.selected .shape {
   fill: #F8E284;
-}
-
-.terapeutas .terapeuta {
-  display: none;
 }
 
 .mapa-column {
