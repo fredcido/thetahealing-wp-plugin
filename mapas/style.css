@@ -4,6 +4,7 @@
 
 #map .state .shape {
   cursor: pointer;
+  outline: none;
   -width: 0;
 }
 
@@ -81,7 +82,15 @@
 }
 
 #map .model-darkgreen .state .shape {
+  fill: #ccc;
+}
+
+#map .model-darkgreen .state .shape.active {
   fill: #366823;
+}
+
+#map .model-darkgreen .state .shape.selected {
+  fill: #F8E284;
 }
 
 #map .model-darkgreen .state .icon_state {
@@ -98,7 +107,8 @@
 
 #map .model-darkgreen .state:hover .shape,
 #map .model-darkgreen .state.hover .shape {
-  fill: #4a8c31; text-decoration: none; 
+  fill: #4a8c31; 
+  text-decoration: none; 
 }
 
 #map .model-darkgreen .state:hover .icon_state,
@@ -117,7 +127,21 @@
   flex-wrap: wrap;
 }
 
+.mapa-column h3 {
+  color: #DD8631;
+}
+
 .mapa-column > div {
+  flex: 1;
+}
+
+.mapa-column .terapeutas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapa-column .terapeutas .terapeuta {
+  border-bottom: 1px solid #ccc;
   flex: 1;
 }
 
@@ -127,4 +151,15 @@
 
 .mapa-column .terapeutas .terapeuta ul li {
   list-style: none;
+}
+
+.mapa-column select {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  #map {
+    display: none;
+  }
 }

@@ -40,6 +40,8 @@ function thetahealing_terapeutas_map($atts)
     }
   }
 
+  ksort($ufs);
+
   // Restore original Post Data
   wp_reset_postdata();
 
