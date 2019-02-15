@@ -1,6 +1,7 @@
 var $ = $ || window.jQuery;
 
 function terapeutaSeleciona(state) {
+  if (!TERAPEUTAS_MAPA[state]) return;
   var terapeutas = TERAPEUTAS_MAPA[state] || [];
   $('.terapeutas .terapeuta').addClass('hide');
   $('#map .state').removeClass('selected');
