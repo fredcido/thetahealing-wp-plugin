@@ -220,23 +220,28 @@
 						$fields = [
 							'telefone' => [
 								'label' => 'Telefone',
-								'icon' => 'phone'
+								'icon' => 'phone',
+								'placeholder' => '<a href="tel:%1$s">%1$s</a>'
 							],
 							'endereco' => [
 								'label' => 'Endere&ccedil;o',
 								'icon' => 'home',
+								'placeholder' => '%s'
 							],
 							'e-mail' => [
 								'label' => 'E-mail',
 								'icon' => 'envelope',
+								'placeholder' => '<a href="mailto:%1$s">%1$s</a>'
 							],
 							'site' => [
 								'label' => 'Site',
 								'icon' => 'internet-explorer',
+								'placeholder' => '<a href="%1$s" target="_blank">%1$s</a>'
 							],
 							'skype' => [
 								'label' => 'Skype',
 								'icon' => 'skype',
+								'placeholder' => '<a href="skype:%1$s?call">%1$s</a>'
 							]
 						];
 
@@ -249,7 +254,7 @@
 											<span class="fas fa-<?php echo $args['icon']; ?>"></span>
 											<?php echo $args['label']; ?>:
 										</strong>
-										<?php echo $value; ?>
+										<?php echo sprintf($args['placeholder'], $value); ?>
 									</li>	
 								<?php
 							endif;
