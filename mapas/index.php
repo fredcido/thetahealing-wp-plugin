@@ -252,7 +252,7 @@
 								?>
 									<li>
 										<strong>
-											<span class="fas fa-<?php echo $args['icon']; ?>"></span>
+											<span class="fa fa-<?php echo $args['icon']; ?>"></span>
 											<?php echo $args['label']; ?>:
 										</strong>
 										<?php echo sprintf($args['placeholder'], $value); ?>
