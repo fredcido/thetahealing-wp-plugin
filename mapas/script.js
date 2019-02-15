@@ -1,15 +1,14 @@
 var $ = $ || window.jQuery;
 
 function terapeutaSeleciona(state) {
-  console.log(state);
   var terapeutas = TERAPEUTAS_MAPA[state] || [];
-  $('.terapeutas .terapeuta').fadeOut();
+  $('.terapeutas .terapeuta').addClass('hide');
   $('#map .state').removeClass('selected');
   
   $('#map #state_' + state.toLowerCase()).addClass('selected');
 
   terapeutas.forEach(function(item) {
-    $('.terapeutas .terapeuta-' + item).fadeIn();
+    $('.terapeutas .terapeuta-' + item).removeClass('hide');
   });
 }
 

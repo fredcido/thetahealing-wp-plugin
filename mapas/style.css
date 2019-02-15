@@ -1,11 +1,10 @@
 #map .state {
   cursor: pointer;
+  cursor: pointer;  outline: none;
 }
 
 #map .state .shape {
   cursor: pointer;
-  outline: none;
-  -width: 0;
 }
 
 #map .state .label_icon_state {
@@ -27,10 +26,6 @@
 #map .state:hover .label_state,
 #map .state.hover .label_state {
   display: block;
-}
-
-#map .model-green .state .shape {
-  fill: #6cb361;
 }
 
 #map .model-green .state .icon_state {
@@ -55,65 +50,16 @@
   fill: #5a95ce;
 }
 
-#map .model-orange .state .shape {
-  fill: #fd7132;
-}
-
-#map .model-orange .state .icon_state {
-  fill: #6cb361;
-}
-
-#map .model-orange .state .label_icon_state {
-  fill: #fff;
-}
-
-#map .model-orange .state .label_state {
-  fill: #666;
-}
-
-#map .model-orange .state:hover .shape,
-#map .model-orange .state.hover .shape {
-  fill: #c93f04;
-}
-
-#map .model-orange .state:hover .icon_state,
-#map .model-orange .state.hover .icon_state {
-  fill: #10592f;
-}
-
-#map .model-darkgreen .state .shape {
+#map .model-green .state .shape {
   fill: #ccc;
 }
 
-#map .model-darkgreen .state .shape.active {
+#map .model-green .state .shape.active {
   fill: #366823;
 }
 
-#map .model-darkgreen .state .shape.selected {
+#map .model-green .state .shape.selected {
   fill: #F8E284;
-}
-
-#map .model-darkgreen .state .icon_state {
-  fill: #2779c6;
-}
-
-#map .model-darkgreen .state .label_icon_state {
-  fill: #fff;
-}
-
-#map .model-darkgreen .state .label_state {
-  fill: #666;
-}
-
-#map .model-darkgreen .state:hover .shape,
-#map .model-darkgreen .state.hover .shape {
-  fill: #4a8c31; 
-  text-decoration: none; 
-}
-
-#map .model-darkgreen .state:hover .icon_state,
-#map .model-darkgreen .state.hover .icon_state {
-  fill: #5a95ce; text-decoration: none; 
 }
 
 .terapeutas .terapeuta {
@@ -143,6 +89,11 @@
 .mapa-column .terapeutas .terapeuta {
   border-bottom: 1px solid #ccc;
   flex: 1;
+  padding: 10px;
+}
+
+.mapa-column .terapeutas .terapeuta.hide {
+  display: none;
 }
 
 .mapa-column .terapeutas .terapeuta ul {
@@ -161,5 +112,8 @@
 @media only screen and (max-width: 768px) {
   #map {
     display: none;
+  }
+  .mapa-column .terapeutas .terapeuta.hide {
+    display: block;
   }
 }
