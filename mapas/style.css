@@ -112,8 +112,4 @@
   .mapa-column {
     flex-direction: column;
   }
-
-  .mapa-column .terapeutas .terapeuta.hide {
-    display: block;
-  }
 }
