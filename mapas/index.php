@@ -3,8 +3,8 @@
 		<p>
 			<strong>Selecione um estado</strong>
 			<select id="uf-select" name="uf-select">
+				<option value=""></option>
 				<?php foreach ($ufs as $uf => $label) : ?>
-					<option value=""></option>
 					<option value="<?php echo $uf ;?>"><?php echo $uf; ?></option>
 				<?php endforeach; ?>
 			</select>
