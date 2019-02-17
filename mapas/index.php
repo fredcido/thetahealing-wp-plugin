@@ -5,7 +5,7 @@
 			<select id="uf-select" name="uf-select">
 				<option value=""></option>
 				<?php foreach ($ufs as $uf => $label) : ?>
-					<option value="<?php echo $uf ;?>"><?php echo $uf; ?></option>
+					<option value="<?php echo $uf ;?>"><?php echo $labels[$uf]; ?></option>
 				<?php endforeach; ?>
 			</select>
 		</p>

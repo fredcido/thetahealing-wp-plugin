@@ -22,6 +22,7 @@ function thetahealing_terapeutas_map($atts)
 
   $terapeutas = [];
   $ufs = [];
+  $labels = [];
   if ($posts->have_posts() ) {
     while ($posts->have_posts()) {
       $posts->the_post();
@@ -30,7 +31,10 @@ function thetahealing_terapeutas_map($atts)
 
       while(have_rows('cidadeuf', $post->ID)) {
         the_row();
-        $uf = get_sub_field('uf');
+        $field = get_field_object('uf');
+        $uf = $field['value'];
+        $label = $field['choices'][$uf];
+        $labels[$uf] = $label;
         if (empty($ufs[$uf])) {
           $ufs[$uf] = [];
         }
