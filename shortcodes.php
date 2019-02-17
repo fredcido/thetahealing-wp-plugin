@@ -31,10 +31,12 @@ function thetahealing_terapeutas_map($atts)
 
       while(have_rows('cidadeuf', $post->ID)) {
         the_row();
-        $field = get_field_object('uf');
+        $field = get_sub_field_object('uf');
+
         $uf = $field['value'];
         $label = $field['choices'][$uf];
         $labels[$uf] = $label;
+
         if (empty($ufs[$uf])) {
           $ufs[$uf] = [];
         }
